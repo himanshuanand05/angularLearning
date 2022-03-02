@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    //moved component declarations to app-routing.module.ts
+    AppComponent,
   ],
   imports: [
     BrowserModule,
