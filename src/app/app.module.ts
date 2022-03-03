@@ -3,11 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FirstComponentComponent } from './first-component/first-component.component';
+import { FirstChildComponent } from './second-component/first-child/first-child.component';
+import { SecondChildComponent } from './second-component/second-child/second-child.component';
+import { SecondComponentComponent } from './second-component/second-component.component';
 
 @NgModule({
   declarations: [
-    //moved component declarations to app-routing.module.ts
     AppComponent,
+    FirstComponentComponent,
+    SecondComponentComponent,
+    FirstChildComponent,
+    SecondChildComponent,
   ],
   imports: [
     BrowserModule,
