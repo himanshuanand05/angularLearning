@@ -23,7 +23,9 @@ const routes: Routes = [
         component: SecondChildComponent, // another child route component that the router renders
       },
     ],
-  }
+  },
+  { path: '',   redirectTo: '/firstComponent', pathMatch: 'full' },  // redirect route
+  { path: '**', component: FirstComponentComponent }  // wildcard route
 ];
 
 @NgModule({
